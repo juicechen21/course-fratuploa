@@ -12,7 +12,7 @@ class Fratupload
     private $totalBlobNum; //文件块总数
     private $fileName; //文件名
     private $allowExtension = ['zip','png'];//允许上传的文件名称后缀
-	private $allowFileType = ['application/zip'];//允许上传的文件名称后缀
+	private $allowFileType = ['application/zip','application/x-zip-compressed'];//允许上传的文件名称后缀
     private $fileExtension ='';//文件名称后缀
 	private $nowfileType ='';//文件类型
     private $nowFile = '';//当前块内容

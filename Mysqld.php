@@ -14,7 +14,7 @@ class Mysqld
 	//查询sql
 	public function selectSql()
 	{
-		$sql = "SELECT * FROM elec_upflie";
+		$sql = "SELECT * FROM elec_cloud";
 		$result = $this->conn->query($sql);
 		var_dump($result);
 		if ($result->num_rows > 0) {
@@ -31,7 +31,7 @@ class Mysqld
 	//插入sql
 	public function insertSql($val)
 	{
-		$sql = "INSERT INTO elec_upflie(url,status,time) VALUES ('".$val."','1',".time().")";
+		$sql = "INSERT INTO elec_cloud(urladdress,status,time) VALUES ('".$val."','1',".time().")";
 		$true = true;
 		if($this->conn->query($sql) !== TRUE){
 			$true = false;
