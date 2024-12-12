@@ -1,5 +1,5 @@
 ## course-fratuploa
-分片上传DEMO
+分片上传 demo
 ## git
 
 ```bash
